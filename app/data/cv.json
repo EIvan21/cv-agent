@@ -1,0 +1,580 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "actualizado": "2026-09-08",
+    "idioma_fuente": "es",
+    "nota": "Fuente de verdad del agente. Cada entrada tiene un 'id' estable que las herramientas devuelven como cita verificable. No agregar datos que no esten respaldados por el CV real."
+  },
+  "perfil": {
+    "id": "perfil",
+    "nombre": "Edher Ivan Diaz Salazar",
+    "titular": "Analytics Engineer e ingeniero de agentes de IA",
+    "especialidad": "Agentes LLM y MCP sobre Google Cloud, con base en Looker, LookML y BigQuery",
+    "ubicacion": "Ciudad de Mexico, Mexico",
+    "anios_experiencia": 5,
+    "disponibilidad_remoto": true,
+    "idiomas": [
+      {
+        "idioma": "Espanol",
+        "nivel": "Nativo"
+      },
+      {
+        "idioma": "Ingles",
+        "nivel": "Profesional pleno",
+        "contexto": "Es su idioma de trabajo diario, no una linea del CV. En GlobalLogic coordina con equipos de Estados Unidos, Europa y Corea, y toda la comunicacion tecnica es en ingles."
+      },
+      {
+        "idioma": "Japones",
+        "nivel": "Basico, en aprendizaje activo"
+      }
+    ],
+    "resumen": "Ingeniero con 5 anios sobre Google Cloud que hoy construye, despliega y monitorea agentes de modelos de lenguaje. En GlobalLogic desarrolla integraciones de agentes LLM y frameworks de prompts (Gemini, Claude Code, Codex, Cursor) que generan y refactorizan LookML automaticamente, y es autor principal de tres piezas de agentes de IA publicadas en la organizacion looker-open-source de Google, incluido el bloque con el que otros equipos monitorean sus propios agentes GenAI. Esa capa de IA se apoya en una base solida de ingenieria: desarrollo web full stack, modelado semantico con LookML, pipelines de datos y despliegue en contenedores. Certificado Associate Cloud Engineer y Generative AI Leader por Google Cloud, y cursando la Maestria en Inteligencia Artificial Aplicada en el Tec de Monterrey."
+  },
+  "contacto": {
+    "id": "contacto",
+    "email": "edher.diaz21@gmail.com",
+    "linkedin": "https://linkedin.com/in/edherdiaz",
+    "github": "https://github.com/EIvan21",
+    "sitio_web": "https://edherivan.com",
+    "_nota_privacidad": "El telefono NO se incluye aqui de forma intencional: este repositorio es publico. El agente solo comparte email, LinkedIn, GitHub y sitio web.",
+    "tiktok": "https://tiktok.com/@eivan7678",
+    "github_trabajo": "https://github.com/heyedher",
+    "_nota_github": "Tiene dos cuentas y usa las dos a diario; no es que una este abandonada. EIvan21 es la personal, donde estan sus proyectos propios, incluido el agente de este CV. heyedher es la que usa en el trabajo, y es donde viven las contribuciones a looker-open-source de Google: el Agent Analytics Block, el GA4 Block y la extension de Looker Stories. Si preguntan por el open source, la cuenta es heyedher; si preguntan por sus proyectos personales o por este agente, EIvan21."
+  },
+  "habilidades": [
+    {
+      "id": "hab-web",
+      "categoria": "Desarrollo Web y Backend",
+      "items": [
+        "Angular",
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "Go (con Go templates)",
+        "Python (FastAPI, Flask)",
+        "Jinja templates",
+        "APIs REST",
+        "Docker",
+        "Git"
+      ],
+      "contexto": "Base practica anterior a su trabajo con agentes, y de donde viene su soltura para llevar cosas a produccion. Trabajo en la migracion de una pagina de producto de Google que corria en Python con plantillas Jinja y se llevo a Go con Go templates (el sitio de Looker Studio, antes Data Studio). Su sitio personal edherivan.com esta hecho en Angular. Las aplicaciones que ha construido para Looker usan JavaScript, TypeScript y CSS. El agente de CV de este mismo portafolio es un servicio Python/FastAPI en contenedor desplegado en Cloud Run."
+    },
+    {
+      "id": "hab-bi",
+      "categoria": "BI y Analitica",
+      "items": [
+        "Looker",
+        "LookML",
+        "Looker Studio",
+        "Modelado semantico y dimensional (Kimball)",
+        "Diseno de dashboards"
+      ],
+      "contexto": "Usadas a diario durante 5 anios en los tres empleos: soporte tecnico especializado de Looker en Infosys, consultoria en GTEC e ingenieria en GlobalLogic."
+    },
+    {
+      "id": "hab-cloud",
+      "categoria": "Datos y Nube",
+      "items": [
+        "BigQuery",
+        "SQL",
+        "Python",
+        "Dataflow",
+        "PySpark",
+        "Vertex AI",
+        "Cloud Storage"
+      ],
+      "contexto": "Google Cloud es la plataforma principal de trabajo. Certificado Associate Cloud Engineer. BigQuery y SQL se usan en practicamente todos los proyectos; Dataflow en pipelines de ingesta en GTEC."
+    },
+    {
+      "id": "hab-ds",
+      "categoria": "Ciencia de Datos",
+      "items": [
+        "pandas",
+        "NumPy",
+        "scikit-learn",
+        "Matplotlib",
+        "Pronostico (forecasting)",
+        "BigQuery ML"
+      ],
+      "contexto": "Aplicadas en el modelo de pronostico de inventario en GTEC, en los modelos de propension del bloque GA Four y en el proyecto final del diplomado de ciencia de datos."
+    },
+    {
+      "id": "hab-ia",
+      "categoria": "IA y Sistemas Agenticos",
+      "items": [
+        "Agentes LLM (Gemini, Claude Code, Codex, Cursor)",
+        "MCP (Model Context Protocol): construccion de servidores y herramientas",
+        "Diseno de skills y flujos entre agentes",
+        "Loop agentico y tool use (ciclo de llamada a herramientas)",
+        "Manejo de ventana de contexto y presupuesto de tokens",
+        "Prompt caching (reduccion medida de 77-95% del contexto reenviado)",
+        "Streaming por SSE y protocolo Open Responses",
+        "Orquestacion multiagente con roles y revision automatica",
+        "Busqueda lexica con IDF y expansion de consulta",
+        "Evaluacion de recuperacion (recall@k, MRR)",
+        "RAG y sistemas de recuperacion",
+        "Ingenieria de prompts",
+        "Guardrails de entrada y salida",
+        "Evaluacion automatizada de agentes",
+        "Observabilidad de agentes GenAI",
+        "Modelos de generacion de video (Veo, Sora, Seedance) via fal.ai",
+        "FastAPI",
+        "Jupyter",
+        "Git"
+      ],
+      "contexto": "Es el nucleo de su trabajo actual y la direccion que quiere de tiempo completo. En GlobalLogic construye integraciones de agentes LLM y frameworks de prompts que generan y refactorizan LookML. Fuera del empleo ha construido tres sistemas agenticos completos: dos skills de agente publicadas en looker-open-source de Google, un sistema multiagente de generacion de video con roles especializados y revision automatica, y el agente conversacional de este CV, con servidor MCP, guardrails, suite de evaluacion y telemetria propia.",
+      "nota_sobre_rag": "Su experiencia en RAG es de construir y MEDIR el sistema, no de conectar una libreria. En el agente de CV implemento la recuperacion desde cero, escribio el banco de evaluacion que la mide, y descarto la busqueda vectorial con numeros en la mano -- documentando ademas bajo que condicion esa decision cambiaria. Conoce las piezas que no uso y por que: BM25, embeddings y similitud coseno, reranking con cross-encoder, busqueda hibrida y estrategias de chunking.",
+      "mecanica_de_agentes": "No trabaja los agentes como caja negra: implemento las piezas. El loop agentico esta escrito a mano y no con el tool runner del SDK, porque hacian falta dos cosas que el runner esconde -- emitir texto al cliente MIENTRAS corre el loop, y contabilizar herramientas, citas y tokens por turno para telemetria. El loop maneja los cuatro estados de parada del modelo, corta bucles de llamadas repetidas con una firma de nombre mas argumentos, y tiene tope de vueltas. La ventana de conversacion se acota por mensajes y por caracteres, y al recortar deja un aviso explicito en el hueco en vez de empalmar en silencio. El cache va en dos puntos -- el prefijo estable y el final del historial -- con un ahorro medido de entre 77% y 95% de la entrada a partir del segundo turno.",
+      "flujos_de_datos_y_mcp": "Los servidores MCP que construye exponen herramientas con esquema JSON estricto, y en el agente de CV el mismo conjunto de herramientas se sirve por dos protocolos -- Open Responses y MCP -- desde un solo despliegue. Eso es posible porque la logica de negocio no sabe nada del transporte: agregar el segundo protocolo fue un archivo, no un rediseno. Del lado de datos, los flujos que ha construido van de ingesta con Dataflow hacia BigQuery hasta la capa semantica en LookML y la telemetria de agentes, que es justamente lo que monitorea el Agent Analytics Block.",
+      "skills_de_agente": "Una skill de agente empaqueta instrucciones, herramientas y criterios para que un agente resuelva una tarea concreta de forma repetible. Tiene dos publicadas en looker-open-source de Google, como autor principal: Looker Architect, que genera el andamiaje de proyectos LookML, y Looker Performance Optimizer, que genera y refactoriza LookML orientado a desempeno recorriendo las capas donde puede estar el problema -- la interfaz, el LookML, o el SQL contra la base."
+    }
+  ],
+  "experiencia": [
+    {
+      "id": "exp-globallogic",
+      "puesto": "Google Cloud Engineer",
+      "empresa": "GlobalLogic",
+      "inicio": "2024-08",
+      "fin": null,
+      "actual": true,
+      "periodo_texto": "Agosto 2024 - Presente",
+      "tecnologias": [
+        "Gemini",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "LookML",
+        "Python",
+        "BigQuery",
+        "Google Cloud"
+      ],
+      "logros": [
+        "Construyo integraciones de agentes LLM y frameworks de prompts (Gemini, Claude Code, Codex, Cursor) que generan y refactorizan LookML automaticamente, acelerando la entrega de dashboards.",
+        "Diseno una metodologia LookML/Python/BigQuery adoptada en varios proyectos, que redujo 30% el tiempo de desarrollo.",
+        "Construyo un generador de datos sinteticos en Python/BigQuery para construccion de dashboards y demos, que redujo 40% el tiempo de creacion de datos.",
+        "Lidero talleres con clientes para definir KPIs, drill-downs y visualizaciones de dashboards de marketing llevados a produccion."
+      ],
+      "como_llegue": "Se movio buscando crecimiento profesional y personal. Lo que termino de decidirlo fue el equipo: multidisciplinario y distribuido, con colegas en Estados Unidos, Europa y Corea. Y volvia a trabajar directamente con Google, esta vez creando productos nuevos ademas de mantener los existentes.",
+      "dia_a_dia": "Construccion de productos nuevos para Google y mantenimiento de los existentes, coordinando a diario con equipos en Estados Unidos, Europa y Corea.",
+      "lo_que_mas_le_gusta": "Hay espacio real para experimentar. Los labs son experimentos que el equipo desarrolla para evaluar si pueden lanzarse al cliente, y la mayoria termina en produccion. Esa es la diferencia entre experimentar y entretenerse.",
+      "progresion": "Entro en agosto de 2024 como Cloud Engineer y Looker Engineer. En abril de 2025 su titulo interno paso a Senior Software Engineer, que es como aparece en LinkedIn; en su CV se presenta como Google Cloud Engineer, que describe mejor lo que hace en el dia a dia."
+    },
+    {
+      "id": "exp-gtec",
+      "puesto": "Consultor Business Analyst - Looker",
+      "empresa": "GTEC",
+      "inicio": "2023-12",
+      "fin": "2024-08",
+      "actual": false,
+      "periodo_texto": "Diciembre 2023 - Agosto 2024",
+      "tecnologias": [
+        "Looker",
+        "Looker Studio",
+        "Python",
+        "BigQuery",
+        "Dataflow"
+      ],
+      "logros": [
+        "Implemento un modelo de pronostico de inventario que redujo 30% el sobreinventario del cliente.",
+        "Se hizo cargo de la ingesta de datos, la visualizacion y el analisis de KPIs con Python, BigQuery, Dataflow y Looker.",
+        "Desarrollo y mantuvo modelos de datos para analitica predictiva, mejorando el desempeno de los dashboards."
+      ],
+      "como_llegue": "GTEC lo contacto para una posicion de analista de datos enfocada a Google Cloud: exactamente el salto de soporte a desarrollo que estaba buscando.",
+      "dia_a_dia": "Proyectos desde cero. Recoleccion de datos con pipelines, carga a BigQuery, y de ahi consultas, optimizacion de queries y creacion de tablas y vistas segun la base. Los dashboards los construia tanto en Looker como en Looker Studio, segun lo que pedia cada cliente. Trabajaba en dos frentes a la vez: con el equipo de ingenieria de datos del lado tecnico, y directamente con el cliente para definir que metricas necesitaba y que preguntas de negocio debia responder cada dashboard.",
+      "sectores": [
+        "Farmacias",
+        "Retail",
+        "Marketing",
+        "Inventarios"
+      ],
+      "por_que_me_gusto": "Eran proyectos cien por ciento reales y en produccion, no ejercicios. Pasar por farmacias, retail, marketing e inventarios en pocos meses le dio amplitud: cada industria le hace preguntas distintas a los mismos datos.",
+      "por_que_sali": "Crecimiento profesional y personal. La oportunidad en GlobalLogic era volver a trabajar directamente con Google, ahora construyendo producto en vez de consultoria."
+    },
+    {
+      "id": "exp-infosys",
+      "puesto": "Technical Support Specialist, Google Looker",
+      "empresa": "Infosys",
+      "inicio": "2021-12",
+      "fin": "2023-12",
+      "actual": false,
+      "periodo_texto": "Diciembre 2021 - Diciembre 2023",
+      "tecnologias": [
+        "Looker",
+        "PostgreSQL",
+        "MySQL",
+        "SQL"
+      ],
+      "logros": [
+        "Resolvio mas de 400 casos de analitica de datos para clientes de Looker, elevando la satisfaccion promedio del cliente a 4.5/5.",
+        "Implemento politicas de gobierno de datos en multiples instancias de Looker, asegurando cumplimiento y calidad de datos.",
+        "Diseno dashboards para clientes y optimizo conexiones de Looker a PostgreSQL, MySQL y otras bases de datos."
+      ],
+      "como_llegue": "Infosys lo contacto para su programa de formacion: la consultora contrata recien egresados, sepan programar o no, los entrena y los va colocando en proyectos. Edher pidio explicitamente que lo asignaran a la cuenta de Google. La manager acepto, y ahi arranco su carrera en datos.",
+      "dia_a_dia": "Soporte tecnico a clientes de Google que usaban Looker. Los clientes levantaban bugs, reportes y problemas de la herramienta; varios llegaban con miedo real de perder sus datos o su codigo. La atencion era por ticket via correo, por chat en vivo, y por videollamada cuando la gravedad del caso lo ameritaba.",
+      "progresion": "Cuatro etapas en dos anos. Entro en diciembre de 2021 como Software Engineering Trainee en Monterrey, paso a Technical Support Resource de Looker en junio de 2022, luego a Technical Support Specialist, y en septiembre de 2023 llego a Looker SME (Subject Matter Expert). Como SME quedo a cargo de un grupo de agentes, monitoreando su desempeno y organizando que quienes tenian mejores resultados compartieran sus tacticas con el resto. La idea era que el equipo subiera en conjunto, no que destacaran individuos.",
+      "casos_complejos": "Como SME de Looker atendia los casos que nadie mas sacaba: integraciones con la API de Looker, el SDK, llamadas a APIs externas, y problemas donde se cruzaban los datos con el modelo semantico.",
+      "aprendizajes": "Tratar con clientes molestos sin perder el profesionalismo, y la disciplina de dar la respuesta correcta en lugar de la respuesta rapida. Mas de 400 casos resueltos dejan una intuicion de producto que no se consigue construyendo: sabes por donde se rompe una herramienta porque la viste romperse de todas las formas posibles.",
+      "por_que_sali": "Queria construir, no solo atender tickets. En soporte resuelves lo que otros disenaron; el siguiente paso natural era desarrollar proyectos propios de principio a fin.",
+      "puestos_en_la_empresa": [
+        "Software Engineering Trainee (diciembre 2021 - junio 2022, Monterrey)",
+        "Technical Support Resource, Looker (junio 2022 - marzo 2023)",
+        "Technical Support Specialist (hasta diciembre 2023)",
+        "Looker SME (septiembre 2023 - diciembre 2023)"
+      ]
+    }
+  ],
+  "proyectos": [
+    {
+      "id": "proy-looker-architect",
+      "nombre": "Looker Architect",
+      "rol": "Autor principal",
+      "organizacion": "looker-open-source (Google)",
+      "tipo": "Skill de agente de IA",
+      "descripcion": "Skill de agente de IA que disena y genera el andamiaje de proyectos LookML limpios y bien estructurados.",
+      "tecnologias": [
+        "LookML",
+        "Agentes LLM",
+        "Ingenieria de prompts"
+      ],
+      "publico": true,
+      "que_problema_resolvia": "Despues de varios proyectos, el trabajo de Looker se vuelve repetitivo. La estructura de archivos es practicamente la misma en todos: modelos, views, explores y dashboards. Y la forma de tratar los datos tambien se repite -- construir views tipo raw y despues refinarlas para ajustar formato y los labels con que aparecen en el dashboard.",
+      "la_idea": "Si el flujo ya esta definido y se repite proyecto tras proyecto, entonces es codificable. Convertirlo en una skill de agente ahorra el arranque completo de cada proyecto nuevo, que es justo la parte que nadie disfruta y donde se cuelan las inconsistencias."
+    },
+    {
+      "id": "proy-looker-performance",
+      "nombre": "Looker Performance Optimizer",
+      "rol": "Autor principal",
+      "organizacion": "looker-open-source (Google)",
+      "tipo": "Skill de agente de IA",
+      "descripcion": "Skill de agente de IA que genera y refactoriza LookML orientado a desempeno.",
+      "tecnologias": [
+        "LookML",
+        "Agentes LLM",
+        "Optimizacion de consultas"
+      ],
+      "publico": true,
+      "que_problema_resolvia": "Auditar un dashboard lento en Looker no es sencillo porque el problema puede estar en cualquiera de varias capas: la UI de Looker, el LookML, o mas atras, el SQL contra la base de datos que se consume. Hay que ir capa por capa descartando, y eso cuesta tiempo.",
+      "la_idea": "La skill audita el proyecto y senala donde esta el cuello de botella en minutos. Se le puede pedir que audite un punto especifico cuando ya sabes que algo va lento. La skill localiza el problema y la persona lo resuelve: acelera el diagnostico, que es la parte lenta, sin quitar el criterio de en medio."
+    },
+    {
+      "id": "proy-agent-analytics",
+      "nombre": "Agent Analytics Block",
+      "rol": "Autor principal",
+      "organizacion": "looker-open-source (Google)",
+      "tipo": "Bloque de Looker",
+      "descripcion": "Bloque de Looker para monitorear y optimizar agentes de IA generativa sobre BigQuery Agent Analytics. Es la capa de visualizacion y entendimiento que faltaba: los datos de uso de los agentes ya se exportaban a BigQuery, pero nadie podia leerlos.",
+      "tecnologias": [
+        "Looker",
+        "LookML",
+        "BigQuery",
+        "Observabilidad de agentes GenAI"
+      ],
+      "publico": true,
+      "de_donde_salio_la_idea": "La idea nacio en el equipo. Los clientes de Google construyen agentes enfocados al flujo de datos, y surgio la pregunta de cuanto los estaban usando realmente dentro de sus ambientes. Nadie tenia esa respuesta. Los datos existian en BigQuery, pero sin capa de visualizacion ni de interpretacion. Ahi entro Edher y construyo el proyecto completo.",
+      "que_mide": [
+        "Cuanto usan las personas a los agentes",
+        "Que agente es el mas utilizado y en que proyecto",
+        "Cual es la pregunta mas repetida y que se pregunta mas",
+        "En que categoria cae cada pregunta",
+        "Que tareas le encargan a cada agente",
+        "Cuantos tokens consume cada uno"
+      ],
+      "por_que_importa_en_una_organizacion_grande": "Tres usos concretos. Uno, evitar sobrecostos: sin medir el consumo de tokens no hay forma de saber que se esta gastando de mas. Dos, ver en que se esta enfocando la gente, que revela necesidades reales que nadie habia escrito en ningun lado. Y tres, acortar el tiempo de respuesta: cuando una pregunta se repite mucho, deja de tener sentido resolverla desde cero cada vez -- conviene documentarla o resolverla con recuperacion sobre una base de conocimiento, que responde al instante.",
+      "impacto": "Fue un lanzamiento grande, anunciado en varios canales de Google. Es open source: cualquiera puede descargarlo, usarlo y contribuirle.",
+      "conexion_con_este_agente": "Este mismo agente de CV escribe su telemetria en BigQuery con el mismo enfoque, y se monitorea con este bloque. La pieza de observabilidad del agente es una contribucion open source propia, no una herramienta traida de fuera."
+    },
+    {
+      "id": "proy-ga-four",
+      "nombre": "GA Four Block",
+      "rol": "Contribuidor",
+      "organizacion": "looker-open-source (Google)",
+      "tipo": "Bloque de Looker",
+      "descripcion": "Bloque de GA4 con sesionizacion incremental, modelos de propension en BigQuery ML y dashboards de cohortes.",
+      "tecnologias": [
+        "Looker",
+        "LookML",
+        "BigQuery ML",
+        "GA4"
+      ],
+      "publico": true
+    },
+    {
+      "id": "proy-cv-agent",
+      "nombre": "Agente de CV conversacional",
+      "rol": "Autor",
+      "organizacion": "Proyecto personal",
+      "tipo": "Sistema agentico",
+      "descripcion": "Este mismo agente. Servidor compatible con el protocolo Open Responses desplegado en Cloud Run, con Claude como modelo, herramientas sobre un CV estructurado, guardrails de entrada y salida, suite de evaluacion automatizada y telemetria en BigQuery monitoreada con el Agent Analytics Block.",
+      "tecnologias": [
+        "Python",
+        "FastAPI",
+        "Claude",
+        "Open Responses",
+        "MCP",
+        "RAG",
+        "Recuperacion lexica con IDF",
+        "Evaluacion de recuperacion (recall@k, MRR)",
+        "Guardrails",
+        "Cloud Run",
+        "BigQuery",
+        "Cloud Storage",
+        "Docker"
+      ],
+      "publico": true,
+      "arquitectura_de_recuperacion": "Es un sistema RAG: recupera de un corpus y genera respuestas fundamentadas, con citas rastreables a la entrada exacta que las sustenta. La recuperacion es lexica -- indice sobre 30 entradas, ponderacion IDF, normalizacion por longitud, expansion de consulta con grupos de sinonimos bidireccionales y lista de palabras vacias -- y devuelve los 8 mejores candidatos por consulta. El modelo nunca ve el CV completo: solo lo que la herramienta le entrega.",
+      "por_que_lexica_y_no_vectorial": "Porque se midio, no porque se supusiera. El repositorio incluye evals/medir_corpus.py, que evalua la recuperacion con un banco de 24 preguntas partido en dos grupos: las que comparten vocabulario con el corpus y las que preguntan lo mismo con otras palabras -- que es donde una busqueda vectorial deberia ganar. Resultados: recall@3 de 92% contra 83%, y MRR de 0.68 contra 0.67. La brecha es de 0.01. Los vectores mejorarian el orden, no la cobertura, y como el modelo recibe 8 candidatos y escoge, ese error de orden no llega al usuario. Queda documentado que cambiaria la decision: bajar k, o que el corpus crezca a un punto donde 8 candidatos no lo cubran.",
+      "como_escalaria": "A escala empresarial el diseno cambia y esta razonado: recuperacion hibrida BM25 mas embeddings con un reranker encima, chunking con metadatos y control de acceso por documento, y el mismo script de medicion como criterio de cuando cada pieza se justifica.",
+      "evaluacion": "Suite de evaluacion de dos capas. 276 pruebas offline que corren sin API key en dos segundos, y un conjunto dorado de 45 casos contra el modelo real que afirma no solo el texto de la respuesta sino QUE HERRAMIENTA se llamo y QUE ENTRADAS se citaron -- que es lo que de verdad se evalua en un sistema de recuperacion. Incluye 12 casos de seguridad y 8 adversariales."
+    },
+    {
+      "id": "proy-video-multiagente",
+      "nombre": "Sistema multiagente de generacion de video",
+      "rol": "Autor",
+      "organizacion": "Proyecto personal",
+      "tipo": "Sistema agentico multiagente",
+      "publico": true,
+      "resumen": "Un equipo de agentes especializados que produce videos cortos de principio a fin a partir de una sola instruccion en lenguaje natural. No es un prompt a un modelo de video: es un flujo con roles, revision y reintentos.",
+      "los_agentes": [
+        "Guionista: escribe el dialogo cuando la escena lo lleva",
+        "Revisor de guion: valida el guion antes de que se gaste una sola generacion",
+        "Director de camaras: decide los encuadres y como se ve cada toma",
+        "Revisor de tomas (entrada): revisa los encuadres antes de generar",
+        "Generador de imagen de referencia: los modelos de video parten de un primer frame, y ese frame lo produce otro agente",
+        "Revisor de tomas (salida): revisa el video ya generado y decide si pasa o se repite",
+        "Editor: pega las mini escenas en un video largo"
+      ],
+      "como_funciona": "Le pides algo como 'un video de Bob Esponja bailando quebradita'. El guionista escribe el dialogo, el director de camaras define las tomas, otro agente genera la imagen de referencia (los modelos de video parten de un primer frame), y de ahi sale el clip. Un agente revisor juzga el resultado: si no paso, no se conforma con reintentar el mismo prompt, sino que decide QUE cambiar -- el prompt de la llamada al modelo, algo del guion, o la direccion de camaras -- y vuelve a tirar la toma hasta que pasa su criterio. Al final el editor pega todo.",
+      "por_que_es_multiagente": "Los modelos de generacion de video producen clips de seis a diez segundos. Para un video largo hay que encadenar varios, y cada uno tiene que ser coherente con el anterior en historia, encuadre y continuidad. Eso no se resuelve con un prompt mas largo: se resuelve separando responsabilidades y metiendo puntos de control entre ellas.",
+      "integracion_tecnica": "Usa fal.ai, que da acceso por API a muchos modelos de video, imagen y audio bajo una sola suscripcion, en vez de integrar cada proveedor por separado. Los modelos de video que emplea son Veo, Sora y Seedance 2.0 Pro. El sistema de agentes y de skills corre en local; a los agentes se les pasa la documentacion de la API y ellos arman las llamadas segun lo que toque en cada etapa. Los clips se guardan en local y ahi mismo se editan.",
+      "por_que_importa": "Es el mismo patron que Edher quiere hacer profesionalmente, construido por gusto: roles especializados, revision automatica con criterio, reintentos dirigidos en vez de ciegos, y orquestacion de varios modelos por API. Un agente que juzga la salida de otro y decide que corregir es exactamente el problema dificil de los sistemas agenticos.",
+      "tecnologias": [
+        "Sistemas multiagente",
+        "fal.ai",
+        "Veo",
+        "Sora",
+        "Seedance 2.0 Pro",
+        "Generacion de imagen",
+        "Ingenieria de prompts",
+        "Integracion por API",
+        "Python"
+      ],
+      "estado": "Proyecto personal en curso. Los videos se publican en su canal de TikTok, @eivan7678, que por ahora tiene poco alcance: es un espacio de experimentacion con modelos generativos, no un proyecto de audiencia."
+    },
+    {
+      "id": "proy-migracion-go",
+      "nombre": "Migracion del sitio de Looker Studio a Go",
+      "rol": "Desarrollador",
+      "organizacion": "Google (via GlobalLogic)",
+      "tipo": "Desarrollo web",
+      "publico": true,
+      "descripcion": "El sitio de producto de Looker Studio (antes Data Studio) corria en Python con plantillas Jinja. Edher participo en rehacerlo y migrarlo a Go con Go templates.",
+      "por_que_importa": "Es la evidencia concreta de que su base no es solo de datos: desarrollo web de punta a punta sobre un producto publico de Google, y una migracion de lenguaje y de motor de plantillas. De ahi viene su soltura para empaquetar y desplegar servicios en produccion.",
+      "tecnologias": [
+        "Go",
+        "Go templates",
+        "Python",
+        "Jinja",
+        "Desarrollo web"
+      ]
+    },
+    {
+      "id": "proy-sitio-personal",
+      "nombre": "edherivan.com",
+      "rol": "Autor",
+      "organizacion": "Proyecto personal",
+      "tipo": "Sitio web",
+      "publico": true,
+      "descripcion": "Su sitio personal, construido en Angular.",
+      "tecnologias": [
+        "Angular",
+        "TypeScript",
+        "CSS"
+      ]
+    }
+  ],
+  "open_source": {
+    "id": "open-source",
+    "organizacion": "looker-open-source (Google)",
+    "bloques_publicados": 30,
+    "pull_requests_mergeados": 45,
+    "descripcion": "Contribuidor a la organizacion looker-open-source de Google, con mas de 30 bloques de Looker y 45 pull requests mergeados. Autor principal de tres de esos proyectos.",
+    "donde_verlo": "En github.com/heyedher, que es su cuenta de trabajo. Los bloques estan publicados bajo la organizacion looker-open-source de Google."
+  },
+  "educacion": [
+    {
+      "id": "edu-mna",
+      "grado": "Maestria en Inteligencia Artificial Aplicada",
+      "institucion": "Tecnologico de Monterrey",
+      "periodo": "Abril 2026 - Abril 2028 (en curso)",
+      "en_curso": true
+    },
+    {
+      "id": "edu-diplomado",
+      "grado": "Diplomado en Ciencia de Datos",
+      "institucion": "Skills Tech, Mexico",
+      "periodo": "Noviembre 2022 - Junio 2023",
+      "en_curso": false,
+      "detalle": "Proyecto final: pronostico de precios de electricidad para el mercado mayorista de Mexico con Python y SQL, aplicando metodologia Kimball."
+    },
+    {
+      "id": "edu-licenciatura",
+      "grado": "Licenciatura en Ingenieria en Energia",
+      "institucion": "Universidad Autonoma Metropolitana",
+      "periodo": "2016 - 2021",
+      "en_curso": false,
+      "detalle": "Medalla al Merito Universitario por el promedio mas alto de la generacion. La carrera cubrio generacion de energia por metodos renovables y no renovables: solar, eolica, biomasa, nuclear y termica.",
+      "proyecto_terminal": "Diseno de una planta generadora de energia acoplada a una desaladora. El agua de mar se desalaba por osmosis inversa, pasaba por calderas e intercambiadores de calor para producir vapor a alta presion, y ese vapor movia una turbina. El calor remanente no se tiraba: se reutilizaba para seguir desalando y para dar agua potable a las poblaciones cercanas a la planta. Un mismo proceso resolvia dos necesidades, energia y agua.",
+      "como_empezo_a_programar": "Al final de la carrera entro a la programacion por la puerta del hardware: proyectos de laboratorio con Raspberry Pi, Arduino y sensores. Ahi aprendio a programar de verdad."
+    }
+  ],
+  "certificaciones": [
+    {
+      "id": "cert-ace",
+      "nombre": "Associate Cloud Engineer",
+      "emisor": "Google Cloud",
+      "anio": 2026
+    },
+    {
+      "id": "cert-genai",
+      "nombre": "Generative AI Leader",
+      "emisor": "Google Cloud",
+      "anio": 2025
+    },
+    {
+      "id": "cert-de",
+      "nombre": "Data Engineer",
+      "emisor": "DataCamp",
+      "anio": 2025
+    }
+  ],
+  "preferencias_rol": {
+    "id": "preferencias-rol",
+    "enfoque": "Inteligencia artificial. Edher quiere que su siguiente rol sea de IA de tiempo completo, no de analitica con IA como accesorio.",
+    "roles_de_interes": [
+      "AI Engineer / Agent Engineer",
+      "Ingeniero de agentes LLM: construccion, despliegue y monitoreo en produccion",
+      "Desarrollo de servidores MCP y de herramientas que consumen los agentes",
+      "Data / AI Engineer sobre Google Cloud"
+    ],
+    "que_busca": "Un rol centrado en construir, desplegar y operar agentes de modelos de lenguaje. Concretamente: llevar agentes a produccion y monitorearlos de verdad, crear servidores MCP, disenar las skills y los flujos con los que trabajan los agentes, y mejorar agentes existentes midiendo si de hecho mejoraron.",
+    "areas_especificas": [
+      "Despliegue y monitoreo de agentes LLM en produccion",
+      "Creacion de servidores MCP (Model Context Protocol)",
+      "Diseno de skills y de flujos de trabajo entre agentes",
+      "Mejora iterativa de agentes con evaluacion medible",
+      "Observabilidad de sistemas de IA generativa"
+    ],
+    "fortalezas_diferenciadoras": [
+      "Combinacion poco comun de modelado semantico serio (LookML, Kimball) con construccion de agentes LLM en produccion.",
+      "Autoria principal de open source dentro de la organizacion de Google, no solo consumo de herramientas.",
+      "Ya construyo la pieza de observabilidad de agentes GenAI que la mayoria apenas consume: el Agent Analytics Block.",
+      "Experiencia de cara al cliente: talleres de KPIs y mas de 400 casos de soporte resueltos."
+    ],
+    "modalidad": "Abierto a remoto e hibrido en Ciudad de Mexico."
+  },
+  "intereses": {
+    "id": "intereses",
+    "_nota": "Lado humano del perfil. Se responde solo si preguntan; no se mete a la fuerza en respuestas profesionales.",
+    "personales": [
+      {
+        "nombre": "Magia",
+        "detalle": "Le gusta desde chico. Empezo haciendo shows pequenos para su familia y hoy la usa en fiestas y reuniones con amigos.",
+        "su_mejor_truco": "Uno que armo en la universidad. Le pedia a alguien su propio celular y le hacia teclear en la calculadora una multiplicacion imposible de anticipar: tres digitos por tres digitos por otros tres digitos. Salia un numero enorme y sin ningun sentido. Cuando esa persona marcaba ese numero, sonaba el telefono de Edher: el resultado era su numero personal.",
+        "por_que_dice_algo_de_el": "Un truco asi no se improvisa: hay que construir hacia atras desde el resultado que quieres y disenar el camino para que parezca libre. Es la misma cabeza que arma un sistema de agentes con roles y puntos de control."
+      },
+      {
+        "nombre": "Guitarra",
+        "detalle": "Toca y hace covers, sobre todo de regional mexicano. Entre sus referencias estan Grupo Frontera, Grupo Firme, Peso Pluma, Christian Nodal, y los clasicos: Jose Jose, Juan Gabriel y Alejandro Fernandez."
+      },
+      {
+        "nombre": "Correr",
+        "detalle": "Corre distancias de diez a quince kilometros. Su ritmo todavia no es el que quiere, pero va mejorando."
+      },
+      {
+        "nombre": "Gimnasio",
+        "detalle": "Le entro en serio este ano. Va al menos tres veces por semana, con una rutina que programo apoyandose en IA."
+      },
+      {
+        "nombre": "Salsa",
+        "detalle": "Toma clases desde hace aproximadamente un ano y le gusta de verdad. Sale a bailar en Ciudad de Mexico, con Mama Rumba entre sus lugares habituales."
+      }
+    ],
+    "tecnicos": [
+      {
+        "nombre": "Creacion de contenido visual con IA",
+        "detalle": "Produce contenido corto para TikTok con modelos de generacion de video (Veo, Sora y Seedance 2.0 Pro) orquestados desde fal.ai. Es su via para mantenerse al dia con los modelos generativos por fuera del trabajo, no solo con los de texto.",
+        "_revisar": "Edher: confirma la lista de modelos de video. Entendi Veo y Sora, y un tercero que no alcance a distinguir en el audio (¿Seedance? ¿Kling?).",
+        "por_que_lo_hace": "Le sirve para mantenerse al dia con los modelos generativos por fuera del trabajo, y conecta con algo que le gustaria hacer mas: explicar y divulgar lo que va saliendo en IA."
+      }
+    ],
+    "viajes": {
+      "resumen": "Viaja buscando tradicion, color y naturaleza, mas que destinos de postal. Sus lugares favoritos son Oaxaca y Puerto Escondido.",
+      "destinos": [
+        {
+          "lugar": "Oaxaca",
+          "detalle": "Uno de sus destinos favoritos. Le atrae por lo colorida y calida que es la ciudad y por el peso que sigue teniendo la tradicion en la vida diaria."
+        },
+        {
+          "lugar": "Puerto Escondido",
+          "detalle": "Su otro destino favorito, en la costa de Oaxaca."
+        },
+        {
+          "lugar": "Guatemala",
+          "detalle": "Fue en abril de 2026, en Semana Santa, y le sorprendio como se vive alli esa tradicion. Recorrio Antigua y sus calles empedradas, vio el Volcan de Fuego, y visito Tikal, las ruinas mayas, que le parecieron lo mas impresionante del viaje."
+        }
+      ]
+    }
+  },
+  "trayectoria": {
+    "id": "trayectoria",
+    "titulo": "De la ingenieria en energia a la IA",
+    "arco": "Edher no empezo en datos. Estudio Ingenieria en Energia en la UAM y se graduo con la Medalla al Merito Universitario por el promedio mas alto de su generacion. Al final de la carrera llego a la programacion por el hardware, automatizando sensores con Arduino y Raspberry Pi en proyectos de laboratorio, y de ahi salto a los datos con Python de forma autodidacta: cursos en linea, YouTube y libros. Ese salto lo llevo a Infosys, donde pidio que lo pusieran en la cuenta de Google, y desde entonces toda su carrera se construyo sobre Google Cloud: soporte experto en Looker, consultoria de datos de punta a punta, y hoy construccion de producto con agentes LLM.",
+    "hilo_conductor": "El patron se repite en cada etapa: aprende por su cuenta, pide explicitamente el lugar donde quiere estar, y se mueve cuando deja de construir. Salio de soporte porque queria desarrollar; salio de consultoria porque queria hacer producto.",
+    "formacion_autodidacta": "Python y ciencia de datos los aprendio por su cuenta con cursos en linea, videos y libros, antes de que fueran su trabajo. La maestria en Inteligencia Artificial Aplicada en el Tec de Monterrey, en curso, es la formalizacion de ese mismo camino.",
+    "por_que_la_maestria_en_ia": "No fue por el titulo. Edher quiere aplicar soluciones de IA a negocios pequenos y medianos, y el caso concreto que lo movio es el de su propia familia: un negocio chico al que le quiere ayudar a ordenar sus flujos, a entender sus datos y, sobre eso, a apoyarse en IA. Para hacerlo bien le faltaban las bases formales, y por eso entro a la Maestria en Inteligencia Artificial Aplicada del Tec de Monterrey. El plan es empezar por el negocio de sus padres y despues llevar lo aprendido a otros negocios como proyectos propios.",
+    "donde_se_ve_en_tres_anios": "Con la maestria terminada y trabajando en la punta del tema: los modelos que van saliendo, las herramientas nuevas, las formas de trabajo que todavia no se estandarizan. Le atrae tambien crear contenido sobre IA y ser de los primeros en explicar lo que va apareciendo, siempre que no compita con sus responsabilidades profesionales.",
+    "el_hilo_de_fondo": "Hay un patron que atraviesa toda su trayectoria: le interesa la tecnologia que aterriza en algo util para alguien concreto. Su proyecto de titulacion en energia no solo generaba electricidad, tambien dejaba agua potable a las poblaciones junto a la planta. Sus skills open source existen porque a el le dolia el trabajo repetitivo y decidio resolverselo a todos. Y la maestria en IA salio de querer ayudarle al negocio de su familia. No es tecnologia por la tecnologia."
+  },
+  "forma_de_trabajar": {
+    "id": "forma-de-trabajar",
+    "de_que_esta_orgulloso": "Que practicamente todo lo que construye sale a produccion y es open source. Los clientes de Google pueden descargarlo, usarlo, contribuirle y levantar issues sobre su codigo.",
+    "relacion_con_la_comunidad": "Esta en comunicacion constante con la comunidad que usa lo que publica, y funciona en las dos direcciones: el les ayuda a mejorar su implementacion y ellos le senalan que mejorar en la suya. Trabajar en abierto significa que su codigo se revisa solo.",
+    "cara_al_cliente": "Viene de dos anos de soporte tecnico directo, asi que esta comodo frente al cliente: traducir un problema de negocio a una solucion tecnica, sostener la calma cuando la persona del otro lado esta molesta, y llevar talleres de KPIs con areas no tecnicas.",
+    "equipos_distribuidos": "Hoy trabaja a diario con equipos en Estados Unidos, Europa y Corea. Ingles profesional y coordinacion asincrona entre husos horarios.",
+    "ante_un_problema_que_no_sabe_resolver": "No le cuesta pedir ayuda y sabe a quien preguntarle. Su regla es no quedarse callado: si no sabe algo lo dice de frente, tanto a si mismo como al equipo. Literalmente pone sobre la mesa 'necesito revisar esto con calma', 'necesito profundizar mas', o pregunta quien del equipo domina el tema y puede orientarlo. Tambien se apoya en IA segun el caso. La idea de fondo es que no tener miedo a no saber es lo que permite avanzar rapido, y que las opiniones del equipo son informacion, no ruido.",
+    "lo_que_le_reconocen": "Integracion de equipo y comunicacion. Tiene inclinacion natural al liderazgo: jala al equipo a probar cosas distintas, propone reunirse a compartir ideas y hacer lluvia de ideas para ver que se puede mejorar. Con criterio, eso si: solo cuando aporta, porque tambien entiende que la gente tiene su trabajo y sus tiempos. Le importa mantener buena relacion con sus companeros y que el equipo se mantenga unido.",
+    "lo_que_le_cuesta": "Arrancar en solitario. Cuando el tema es nuevo, nadie del equipo lo domina y le toca empezar de cero, la parte dificil no es investigar sino decidir POR DONDE empezar a investigar. Se le junta con que no se conforma con lo primero que lee: necesita que le quede claro todo, y ese proceso es pesado. Sabe de antemano que va a quedar absorbido en el tema un buen rato, y esa certeza es justo lo que hace cuesta arriba el primer paso. Una vez adentro, el problema es el contrario: le cuesta soltarlo.",
+    "que_equipo_le_saca_lo_mejor": "Equipos y jefes que permiten colaborar y proponer sin limitar. Donde se pueda preguntar sin que te hagan sentir mal, tonto, o que la pregunta no tenia sentido. Su criterio es simple: donde te escuchan y te sientes valorado es donde das lo mejor. Es coherente con como el lidera -- en Infosys, como SME, su forma de subir al equipo fue que los agentes con mejores resultados compartieran sus tacticas con los demas.",
+    "uso_de_ia_en_su_proceso": "Usa IA como una fuente mas dentro de su proceso de investigacion, segun el caso, no como sustituto de entender el problema. Es consistente con su trabajo: construye agentes LLM, asi que conoce de primera mano donde ayudan y donde no hay que creerles.",
+    "aprendizaje_continuo": "Es el hilo mas constante de su trayectoria. Aprendio a programar por su cuenta al final de una carrera de ingenieria en energia, salto a datos con Python de forma autodidacta, se certifico en Google Cloud dos veces, y hoy cursa una maestria en IA aplicada mientras construye sistemas agenticos por su cuenta fuera del trabajo. Cuando una tecnologia no esta en su historial, el patron dice que la aprende rapido: es lo que ha hecho en cada etapa.",
+    "que_ofrece": "Llega con ganas de construir, no de mantener. Le interesan los equipos donde pueda proponer y donde lo que construye llegue a produccion, y trae la combinacion poco comun de saber modelar datos en serio y saber llevar un agente a produccion con evaluacion y observabilidad."
+  },
+  "_por_confirmar": [
+    "Magia: el angulo de ligue del truco se omitio a proposito. Si lo quieres dentro, dilo.",
+    "Migracion de Looker Studio: confirmar si fue trabajo de equipo o individual, y en que anio.",
+    "edherivan.com: version de Angular, si aplica."
+  ],
+  "publicaciones": {
+    "id": "publicaciones",
+    "titulo": "Estudio del comportamiento de un compresor centrifugo",
+    "descripcion": "Articulo de investigacion sobre el diseno de un banco de pruebas para compresores centrifugos mediante simulacion CFD (dinamica de fluidos computacional). Es de su etapa de Ingenieria en Energia y muestra que su formacion en simulacion y analisis numerico es anterior a su carrera en datos."
+  },
+  "formacion_complementaria": {
+    "id": "formacion-complementaria",
+    "nota": "Cursos y certificaciones fuera de los titulos formales. Muestran el habito autodidacta que atraviesa toda su trayectoria.",
+    "cursos": [
+      "Curso de Analisis de Negocios para Ciencia de Datos",
+      "Enterprise Data Science in Practice",
+      "Curso Profesional de Python",
+      "Data Analysis With Python",
+      "Sistemas Fotovoltaicos Interconectados a la Red Electrica"
+    ],
+    "plataformas": "Varias de estas vienen de Platzi, en temas de pensamiento computacional, analisis de negocios e inteligencia de negocios. Ademas aprendio bases de datos, MySQL y Python por su cuenta con videos, articulos, cursos en linea y libros.",
+    "top_skills_linkedin": [
+      "Jupyter",
+      "API Development",
+      "Matplotlib"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pruebas:
+    name: Pruebas offline
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements-dev.txt
+
+      # Estas pruebas no llaman al modelo: no necesitan API key ni cuestan dinero,
+      # asi que corren en cada push. La suite que si llama al modelo
+      # (evals/run_evals.py) se corre a mano antes de desplegar.
+      - name: Recuperacion, guardrails y protocolo
+        run: pytest evals/test_offline.py -v
+
+      - name: Verificar que la imagen construye
+        run: docker build -t cv-agent:ci .
+
+      - name: Verificar que el contenedor responde
+        run: |
+          docker run -d --name cv-agent-ci -p 8080:8080 -e ANTHROPIC_API_KEY=falsa cv-agent:ci
+          for i in $(seq 1 20); do
+            if curl -sf http://localhost:8080/salud > /dev/null; then break; fi
+            sleep 1
+          done
+          curl -sf http://localhost:8080/salud | tee /dev/stderr | grep -q '"estado":"ok"'
+          curl -sf http://localhost:8080/.well-known/agent-card.json | grep -q openresponses.org
+
+          # El servidor MCP falla en silencio si el lifespan de la sub-app no se
+          # encadena: el endpoint principal sigue vivo y nadie se entera.
+          curl -sf -X POST http://localhost:8080/mcp/             -H "Content-Type: application/json"             -H "Accept: application/json, text/event-stream"             -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"ci","version":"1.0"}}}'             | tee /dev/stderr | grep -q '"serverInfo"'
+
+          docker rm -f cv-agent-ci
