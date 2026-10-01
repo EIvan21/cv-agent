@@ -24,10 +24,16 @@ REGION="${REGION:-us-central1}"
 SERVICIO="${SERVICIO:-cv-agent}"
 SECRETO="${SECRETO:-anthropic-api-key}"
 
-# Instancias minimas. En 1, el evaluador nunca pega con un arranque en frio
-# (que en este contenedor son ~4 s). Cuesta unos pocos dolares al mes, asi que
-# conviene bajarlo a 0 cuando termine la evaluacion.
-MIN_INSTANCIAS="${MIN_INSTANCIAS:-1}"
+# Instancias minimas. En 1 nadie pega con un arranque en frio, pero se paga la
+# instancia ociosa las 24 horas: del orden de 150 pesos al mes en un servicio
+# con pocas visitas, asi que por defecto queda en 0.
+#
+# El arranque en frio vuelve a existir: la primera peticion contra una revision
+# recien creada tardo 18 s, la mayor parte en traer la imagen. En la practica
+# casi no se nota, porque la sonda de disponibilidad pega a /salud desde seis
+# regiones y deja un hueco medio de 49 s entre peticiones, asi que el contenedor
+# rara vez se duerme. Para una demo en vivo, subelo a 1 con MIN_INSTANCIAS=1.
+MIN_INSTANCIAS="${MIN_INSTANCIAS:-0}"
 MAX_INSTANCIAS="${MAX_INSTANCIAS:-10}"
 
 if [[ -z "$PROYECTO" ]]; then

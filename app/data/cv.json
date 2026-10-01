@@ -28,7 +28,7 @@
         "nivel": "Basico, en aprendizaje activo"
       }
     ],
-    "resumen": "Ingeniero con 5 anios sobre Google Cloud que hoy construye, despliega y monitorea agentes de modelos de lenguaje. En GlobalLogic desarrolla integraciones de agentes LLM y frameworks de prompts (Gemini, Claude Code, Codex, Cursor) que generan y refactorizan LookML automaticamente, y es autor principal de tres piezas de agentes de IA publicadas en la organizacion looker-open-source de Google, incluido el bloque con el que otros equipos monitorean sus propios agentes GenAI. Esa capa de IA se apoya en una base solida de ingenieria: desarrollo web full stack, modelado semantico con LookML, pipelines de datos y despliegue en contenedores. Certificado Associate Cloud Engineer y Generative AI Leader por Google Cloud, y cursando la Maestria en Inteligencia Artificial Aplicada en el Tec de Monterrey."
+    "resumen": "Ingeniero con 5 anios sobre Google Cloud que hoy construye, despliega y monitorea agentes de modelos de lenguaje. En GlobalLogic desarrolla integraciones de agentes LLM y frameworks de prompts (Gemini, Claude Code, Codex, Cursor) que generan y refactorizan LookML automaticamente, y es autor principal de siete proyectos en la organizacion looker-open-source de Google -- tres de ellos piezas de agentes de IA, incluido el bloque con el que otros equipos monitorean sus propios agentes GenAI. Esa capa de IA se apoya en una base solida de ingenieria: desarrollo web full stack, modelado semantico con LookML, pipelines de datos y despliegue en contenedores. Certificado Associate Cloud Engineer y Generative AI Leader por Google Cloud, y cursando la Maestria en Inteligencia Artificial Aplicada en el Tec de Monterrey."
   },
   "contacto": {
     "id": "contacto",
@@ -325,7 +325,7 @@
       "arquitectura_de_recuperacion": "Es un sistema RAG: recupera de un corpus y genera respuestas fundamentadas, con citas rastreables a la entrada exacta que las sustenta. La recuperacion es lexica -- indice sobre 30 entradas, ponderacion IDF, normalizacion por longitud, expansion de consulta con grupos de sinonimos bidireccionales y lista de palabras vacias -- y devuelve los 8 mejores candidatos por consulta. El modelo nunca ve el CV completo: solo lo que la herramienta le entrega.",
       "por_que_lexica_y_no_vectorial": "Porque se midio, no porque se supusiera. El repositorio incluye evals/medir_corpus.py, que evalua la recuperacion con un banco de 24 preguntas partido en dos grupos: las que comparten vocabulario con el corpus y las que preguntan lo mismo con otras palabras -- que es donde una busqueda vectorial deberia ganar. Resultados: recall@3 de 92% contra 83%, y MRR de 0.68 contra 0.67. La brecha es de 0.01. Los vectores mejorarian el orden, no la cobertura, y como el modelo recibe 8 candidatos y escoge, ese error de orden no llega al usuario. Queda documentado que cambiaria la decision: bajar k, o que el corpus crezca a un punto donde 8 candidatos no lo cubran.",
       "como_escalaria": "A escala empresarial el diseno cambia y esta razonado: recuperacion hibrida BM25 mas embeddings con un reranker encima, chunking con metadatos y control de acceso por documento, y el mismo script de medicion como criterio de cuando cada pieza se justifica.",
-      "evaluacion": "Suite de evaluacion de dos capas. 276 pruebas offline que corren sin API key en dos segundos, y un conjunto dorado de 45 casos contra el modelo real que afirma no solo el texto de la respuesta sino QUE HERRAMIENTA se llamo y QUE ENTRADAS se citaron -- que es lo que de verdad se evalua en un sistema de recuperacion. Incluye 12 casos de seguridad y 8 adversariales."
+      "evaluacion": "Suite de evaluacion de dos capas. 293 pruebas offline que corren sin API key en dos segundos, y un conjunto dorado de 45 casos contra el modelo real que afirma no solo el texto de la respuesta sino QUE HERRAMIENTA se llamo y QUE ENTRADAS se citaron -- que es lo que de verdad se evalua en un sistema de recuperacion. Incluye 12 casos de seguridad y 8 adversariales."
     },
     {
       "id": "proy-video-multiagente",
@@ -396,9 +396,10 @@
   "open_source": {
     "id": "open-source",
     "organizacion": "looker-open-source (Google)",
-    "bloques_publicados": 30,
-    "pull_requests_mergeados": 45,
-    "descripcion": "Contribuidor a la organizacion looker-open-source de Google, con mas de 30 bloques de Looker y 45 pull requests mergeados. Autor principal de tres de esos proyectos.",
+    "repositorios_con_contribuciones": 40,
+    "pull_requests_mergeados": 61,
+    "proyectos_como_autor_principal": 7,
+    "descripcion": "Contribuidor a la organizacion looker-open-source de Google: 61 pull requests mergeados repartidos en 40 repositorios. Autor principal de siete proyectos: las skills de agente Looker Architect y Looker Performance Optimizer, y los bloques Agent Analytics, AlloyDB Observability, Chrome UX Report, Search Console y Google Trends.",
     "donde_verlo": "En github.com/heyedher, que es su cuenta de trabajo. Los bloques estan publicados bajo la organizacion looker-open-source de Google."
   },
   "educacion": [
